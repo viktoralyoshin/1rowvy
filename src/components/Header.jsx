@@ -73,7 +73,7 @@ const Header = () => {
         </motion.div>
       </motion.div>
       <div className="md:hidden fixed flex font-body z-20 w-full">
-        <div className="absolute z-20 mt-4 flex justify-between w-full">
+        <div className="absolute z-20 flex justify-between w-full backdrop-blur-lg h-[70px] bg-opacity-70 bg-[#000] items-center">
           <img
             src={logoImg}
             alt=""
