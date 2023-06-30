@@ -31,10 +31,10 @@ const Hero = () => {
 
   return (
     <Parallax
-      blur={{ min: -20, max: 15 }}
+      blur={{ min: -20, max: 20 }}
       bgImage={bgImg}
       bgImageStyle={{ "object-fit": "cover" }}
-      strength={600}
+      strength={300}
     >
       <motion.div
         initial="hidden"
@@ -47,18 +47,19 @@ const Hero = () => {
             <div className="flex flex-col">
               <motion.h1
                 variants={textAnimation}
+                transition={{ delay: 0.5 }}
                 className="text-white font-extrabold text-[56px] w-2/3 z-10"
               >
                 Welcome to <span className="text-red-600">1rowvy</span> beat store
               </motion.h1>
             </div>
-            <div>
+            <div className="md:flex hidden">
               <motion.img
                 variants={imgAnimation}
                 transition={{ duration: 0.5 }}
                 src={speakerImg}
                 alt=""
-                className="-skew-y-3 absolute right-6 top-2/4 z-[5] w-[200px] md:w-[370px]"
+                className="-skew-y-3 absolute right-6 top-1/4 z-[5] w-[370px]"
               />
             </div>
           </div>
