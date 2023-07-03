@@ -1,14 +1,20 @@
-import { useState } from "react";
-import Hero from "./components/Hero";
 import Header from "./components/Header";
-import Catalog from "./components/Catalog";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Catalog />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
+        </Routes>
+      </div>
     </>
   );
 }

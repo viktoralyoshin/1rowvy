@@ -48,9 +48,16 @@ const Hero = () => {
               <motion.h1
                 variants={textAnimation}
                 transition={{ delay: 0.5 }}
-                className="text-white font-extrabold text-[56px] w-2/3 z-10"
+                className="text-white font-extrabold text-[56px] z-10 pb-4"
               >
-                Welcome to <span className="text-red-600">1rowvy</span> beat store
+                Welcome to
+              </motion.h1>
+              <motion.h1
+                variants={textAnimation}
+                transition={{ delay: 0.7 }}
+                className="text-white font-extrabold text-[48px] z-10"
+              >
+                <span className="text-red-600">1rowvy</span> beat store
               </motion.h1>
             </div>
             <div className="md:flex hidden">

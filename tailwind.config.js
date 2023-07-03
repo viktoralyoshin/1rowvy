@@ -7,7 +7,10 @@ export default {
   theme: {
     fontFamily: {
       'body': ['"Plus Jakarta Sans"'],
-    }
+    },
+    backgroundImage: {
+      'page': "url('background.svg')",
+    },
   },
   plugins: [],
 }
