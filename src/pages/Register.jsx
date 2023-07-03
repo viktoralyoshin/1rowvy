@@ -16,7 +16,7 @@ const Register = () => {
                 Email
               </label>
               <input
-                type="text"
+                type="email"
                 placeholder="Email"
                 id="email"
                 required
