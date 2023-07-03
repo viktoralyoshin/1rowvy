@@ -7,7 +7,7 @@ const Login = () => {
       <div className="bg-white flex rounded-xl mx-auto max-w-[1200px]">
         <div className="flex flex-col p-8">
           <h1 className="text-black text-[36px] py-4 font-bold">Log In</h1>
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
             <div className="py-4">
               <label
                 class="block text-gray-700 text-sm font-bold mb-2"
